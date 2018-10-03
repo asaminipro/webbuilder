@@ -1,0 +1,14 @@
+<div class="row form-group">	
+																		<div class="col-lg-12">
+																		<h3>------------------------------------------
+																			Or
+																			------------------------------------------</h3>
+																			
+																		</div>
+																		<div class="col-md-12">
+																			<button type="button" class="btn btn-info col-lg-6">Info</button>
+																		
+																			<button type="button" class="btn btn-warning col-lg-6">Warning</button>
+																			
+                                                                        </div>
+																	</div>

@@ -78,7 +78,7 @@ function check()
 						<td>
 							<div class="col-md-6">
 								<label for="card_type">CARD TYPE</label></div></td>
-								<td><input type="text" name="card_type" class="form-control col -1"></td>
+								<td><input type="text" name="card_type" class="form-control col -1" required></td>
 							
 						</tr>
 				<tr>
@@ -86,7 +86,7 @@ function check()
 						<td>
 							<div class="col-md-6">
 								<label for="card_holder">CARD HOLDER</label></div></td>
-								<td><input type="text" name="card_holder" class="form-control col -1"></td>
+								<td><input type="text" name="card_holder" class="form-control col -1" required></td>
 							
 						</tr>
 						
@@ -94,22 +94,21 @@ function check()
 						<td>
 							<div class="col-md-6">
 								<label for="card_no">CARD NUMBER</label></div></td>
-								<td><input type="text" name="card_no" id="card_no" class="form-control col-2">
-								<input type="text" name="card_no" id="card_no" class="form-control col -1"></td>
+								<td><input type="text" name="card_no" id="card_no" class="form-control col -1" required></td>
 							
 						</tr>
 				<tr>
 						<td>
 							<div class="col-md-6">
 								<label for="acc_no">ACCOUNT NUMBER</label></div></td>
-								<td><input type="text" name="account_no"  class="form-control col -1"></td>
+								<td><input type="text" name="account_no"  class="form-control col -1" required></td>
 							
 						</tr>
 						<tr>
 						<td>
 							<div class="col-md-6">
 								<label for="cvv_type">CVV NUMBER</label></div></td>
-								<td><input type="text" name="cvv_number"  class="form-control col -1"></td>
+								<td><input type="text" name="cvv_number"  class="form-control col -1" required></td>
 							
 						</tr>
 						
@@ -165,7 +164,7 @@ function check()
 						<td>
 							<div class="col-md-6">
 								<label for="phone_num">PHONE NUMBER</label></div></td>
-								<td><input type="text" name="phone_number" id="phone" class="form-control col -1">
+								<td><input type="text" name="phone_number" id="phone" class="form-control col -1" required>
 								<p id="pn"></p></td>
 								
 						</tr>

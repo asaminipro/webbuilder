@@ -59,7 +59,12 @@ function check()
 	document.getElmeentById("pn").innerHTML="INVALID PHONE NUMBER";
 	return false;
 	}
-	
+	var num =  document.getElementById("cvv").value;
+	if(num.length!=3)
+	{
+	document.getElementById("cvv3").innerHTML="INVLAID CVV NUMBER";
+	return false;
+	}
 
 }
 </script>
@@ -108,7 +113,8 @@ function check()
 						<td>
 							<div class="col-md-6">
 								<label for="cvv_type">CVV NUMBER</label></div></td>
-								<td><input type="text" name="cvv_number"  class="form-control col -1" required></td>
+								<td><input type="text" name="cvv_number" id="cvv"  class="form-control col -1" required>
+								<p id="cvv3"></p></td>
 							
 						</tr>
 						

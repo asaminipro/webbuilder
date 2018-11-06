@@ -71,7 +71,7 @@
 						<td>
 							<div class="col-md-6">
 								<label for="card_no">CARD NUMBER</label></div></td>
-								<td><input type="text" name="card_no" id="card_no" class="form-control col -1"></td>
+								<td><input type="text" name="card_no" id="card_no" class="form-control col -1" required></td>
 							
 						</tr>
 						<tr>
@@ -124,7 +124,7 @@
 						<div class="col-md-6">
 							<label for="cvv">CVV</label></div>
 						</td>
-					<td><input type="text" class="form-control" name="cvv"></td>
+					<td><input type="text" class="form-control" name="cvv" required></td>
 						
 						</tr>
 						<tr>

@@ -65,6 +65,12 @@ function check()
 	document.getElementById("cvv3").innerHTML="INVLAID CVV NUMBER";
 	return false;
 	}
+	var card = document.getElementById("card_no").value;
+    	if(card.length!=12)
+   	 {
+    	document.getElementById("cardnum").innerHTML="INVALID CARD NUMBER";
+    	return false;
+   	 }
 
 }
 </script>
@@ -99,8 +105,8 @@ function check()
 						<td>
 							<div class="col-md-6">
 								<label for="card_no">CARD NUMBER</label></div></td>
-								<td><input type="text" name="card_no" id="card_no" class="form-control col -1" required></td>
-							
+								<td><input type="text" name="card_no" id="card_no" class="form-control col -1" required>
+								<p id="cardnum"></p></td>
 						</tr>
 				<tr>
 						<td>

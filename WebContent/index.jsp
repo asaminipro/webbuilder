@@ -51,6 +51,8 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	
 
 	</head>
 	<body>
@@ -64,10 +66,13 @@
 					<div class="row">
 						<div class="col-xs-2">
 							<div id="colorlib-logo"><a href="index.jsp">WEBPAGE BUILDER</a></div>
+							
 						</div>
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
 								<li class="active"><a href="index.jsp">Home</a></li>
+								<li><a href="contact.jsp">CONTACT</a></li>
+								<li><a href="editor.jsp">editor</a></li>
 								<li class="has-dropdown">
 									<a href="blog.jsp">Blog</a></li>
 									 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">SIGNUP</button>
@@ -88,31 +93,36 @@
 													<button type="button" class="close" data-dismiss="modal">&times;</button>
 													<h4 class="modal-title">SIGNUP HERE</h4>
 												  </div>
-												  <div class="modal-body">
+												  <div class="modal-body" background-image="signin-image.jpg">
 												  
 			<!-- **********************************************END LOGIN FORM ********************************************************************-->
-																	<form action="registration_serve" method="POST">
+																	<form action="registration_serve" method="POST" onSubmit="return reg_validation()">
 																	<div class="row form-group">
 																		<div class="col-md-6">
 																			<label for="name">NAME</label>
-																			<input type="text" id="name" name="name"class="form-control" placeholder="Pleae enter your Name">
+																			<input type="text" id="name" name="name" class="form-control" placeholder="Pleae enter your Name" required>
+																			<font color="red"><p id="val_nam"></p></font>
 																		</div>
 																		<div class="col-md-6">
 																			<label for="phoneno">PHONE NUMBER</label>
-																			<input type="text" id="pno" name="pno" class="form-control" placeholder="Pleae enter your phone number">
+																			<input type="text" id="pno" name="pno" class="form-control" placeholder="Pleae enter your phone number"required >
+																			<font color="red"><p id="val"></p></font>
 																		</div>
 																		<div class="col-md-12">
-																			<label for="email">EMAIL</label>
-																			<input type="text" id="email" name="mail" class="form-control" placeholder="Pleae enter your Name">
+																			<label for="email">EMAIL </label>
+																			<input type="text" id="email" name="mail" class="form-control" placeholder="Pleae enter your Name"required>
+																			<p id="val_mail"></p>
 																		</div>
 																		
 																		<div class="col-md-6">
 																			<label for="pass">PASSWORD</label>
-																			<input type="password" id="password" name="password" class="form-control" placeholder="Your password">
+																			<input type="password" id="password" name="password" class="form-control" placeholder="Your password" required>
+																			<p id="val_pass"></p>
 																		</div>
 																		<div class="col-md-6">
 																			<label for="cpass">CONFIRM PASSWORD</label>
-																			<input type="password" id="cpassword" name="cpassword" class="form-control" placeholder="Your password">
+																			<input type="password" id="cpassword" name="cpassword" class="form-control" placeholder="Your password" required>
+																			<p id="val_cpass"></p>
 																		</div>
 																		<div class="row form-group">	
 																		<div class="col-lg-12">
@@ -134,7 +144,7 @@
 																		</center>
 																		</div>
 																		
-                                                                        </div>
+                                                                        </div>-->
 																			
 																		
 																		
@@ -151,7 +161,7 @@
 			<!-- **********************************************END OF OTHER LOGIN ACTION**********************************************************-->
 												  <div class="modal-footer">
 													
-											<a href="registration.jsp">New Registration</a>
+											<a href="login_form.jsp">already have account</a>
 												  </div>
 												</div>
 

@@ -52,7 +52,30 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
 
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #A49CFA;
+    color: white;
+}
+</style>
 	</head>
 	<body>
 	<%
@@ -64,13 +87,13 @@
 		Statement st=conn.createStatement();
 		ResultSet rs=st.executeQuery("select * from notification");
 	%>
-	<center><table border="2">
+	<center><table border="2" id="customers">
 	<tr>	
-	<td><b>TITLE</b></td>
-	<td><b>DESCRIPTION</b></td>
-	<td><b>DATE</b></td>
-	<td><b>TIME</b></td>
-	<td></td><td></td>
+	<th><b>TITLE</b></th>
+	<th><b>DESCRIPTION</b></th>
+	<th><b>DATE</b></th>
+	<th><b>TIME</b></th>
+	<th></th><th></th>
 	</tr>
 		<% while(rs.next()) { %>
 	
@@ -79,7 +102,8 @@
 			<td><%= rs.getString(3)%></td>
 			<td><%= rs.getString(4)%></td>
 			<td><%= rs.getString(5)%></td>
-			<td><a href="edit_noti.jsp?value=<%= rs.getString(1) %>"> EDIT</a>
+			<td><a href="edit_noti.jsp?value=<%= rs.getInt(1) %>"> EDIT</a>
+			<td><a href="delete_noti.jsp?value=<%= rs.getInt(1) %>"> Delete</a>
 			</tr>
 			
 						
@@ -94,7 +118,7 @@
 		}
 		%>
 	
-
+<br><br><br><br><br><br>
   <%@include file="footer.jsp" %>
 	
 	<!-- jQuery -->

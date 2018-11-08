@@ -17,6 +17,7 @@
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/webpagebuilder", "root", "");
 		Statement st=conn.createStatement();
 		int i = st.executeUpdate("DELETE FROM notification WHERE id = '"+nid+"'");
+		response.sendRedirect("view_noti_admin.jsp");
 		
 		}
 catch(Exception e)

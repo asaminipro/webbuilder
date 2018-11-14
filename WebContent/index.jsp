@@ -43,7 +43,7 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -72,7 +72,6 @@
 							<ul>
 								<li class="active"><a href="index.jsp">Home</a></li>
 								<li><a href="contact.jsp">CONTACT</a></li>
-								<li><a href="editor.jsp">editor</a></li>
 								<li class="has-dropdown">
 									<a href="blog.jsp">Blog</a></li>
 									 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">SIGNUP</button>
